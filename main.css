@@ -1,0 +1,13 @@
+body {
+  background-color: black;
+}
+
+.container {
+  background-color: black;
+}
+
+#intro {
+  color: white;
+  font-family: Rokkit;
+  margin-top: 20px;
+}
