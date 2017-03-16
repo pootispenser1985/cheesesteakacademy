@@ -1,2 +1,4 @@
 update.sh
 *.save
+pics/*
+loc.txt
