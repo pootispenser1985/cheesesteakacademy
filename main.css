@@ -9,21 +9,20 @@ body {
 
 #aboutChris {
   background-color: #475841;
+  padding-bottom: 3em;
   padding-top: 2em;
   padding-left: 5em;
   padding-right: 5em;
-  margin-bottom: 3em;
-}
-
-#comingSoon {
-  padding-top: 2em;
-  margin-bottom: 3em;
 }
 
 #intro {
   font-family: Rokkit;
   margin-bottom: 3em;
   margin-top: 2em;
+}
+
+#truckFinder {
+  padding-top: 2em;
 }
 
 #truckFinder img {

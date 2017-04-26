@@ -8,7 +8,7 @@
   <link rel="stylesheet"
     href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="main.css?v=a">
+  <link rel="stylesheet" type="text/css" href="main.css?v=042517c">
 </head>
 <body>
   <div class="container">
@@ -21,30 +21,22 @@
       </div>
     </div>
 
-    <div class="row text-center" id="comingSoon">
-      <h2>Coming Soon!!</h2>
-    </div>
-
     <div class="row text-center" id="aboutChris">
       <div class="col-lg-12 col-xs-12">
         <h3>About the Owner:</h3>
-        <p>In publishing and graphic design, lorem ipsum (derived from Latin
-          dolorem ipsum, translated as "pain itself") is a filler text commonly
-          used to demonstrate the graphic elements of a document or visual presentation.
-          Replacing meaningful content with placeholder text allows designers to
-          design the form of the content before the content itself has been produced.[citation needed]
-          The lorem ipsum text is typically a scrambled section of De finibus bonorum
-          et malorum, a 1st-century BC Latin text by Cicero, with words altered,
-          added, and removed to make it nonsensical, improper Latin.[citation needed]
-          A variation of the ordinary lorem ipsum text has been used in typesetting since
-          the 1960s or earlier, when it was popularized by advertisements for Letraset
-          transfer sheets. It was introduced to the Information Age in the mid-1980s
-          by Aldus Corporation, which employed it in graphics and word-processing
-          templates for its desktop publishing program PageMaker.
+        <p>Born in Philadelphia, Christopher has cheesesteaks running through his veins.
+        <br>Transplanted to Nashville almost 20 years ago, he was unable to find his first love - an authentic "Wit Wiz" (with cheese whiz) steak sandwich.
+        <br>Sure, lots of places claim to have the best Philly Cheesesteaks, but it's all lies.
+        <br>Any trip up north Christopher would make sure he flew into Philadelphia International Airport - just to go to Pat's King of Steaks, where it all started.
+        <br>Then it happened... Christopher figured out the recipe. Sure, he could be greedy and keep it all to himself but he's not that kind of guy.
+        <br>He instead decided to educate your tastebuds.
         </p>
       </div>
     </div>
 
+    <?php
+      $location = "Nashville";
+    ?>
     <div class="row" id="truckFinder">
       <div class="col-lg-6 col-xs-12">
         <h4>Don't miss the bus!</h4>
@@ -52,11 +44,11 @@
           width="100%"
           height="350px"
           frameborder="0" style="border:0"
-          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAb_y9cQ9NdEHYasf3R2UnTLS4kMRe_W9M&q=1706+Heil+Quaker+Blvd+La+Vergne+TN" allowfullscreen>
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAb_y9cQ9NdEHYasf3R2UnTLS4kMRe_W9M&q=<?php echo $location; ?>" allowfullscreen>
         </iframe>
       </div>
       <div class="col-lg-6 col-xs-12">
-        <img src="/pics/cheese-steak-629342_640.jpg">
+        <img src="/pics/cheesesteak-small.jpg">
       </div>
     </div>
   </div>

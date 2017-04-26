@@ -1,14 +1,15 @@
 <?php
-$file = fopen('loc.txt', 'w');
+$file = fopen('loc.txt', 'r') or die('could not open');
 ?>
 <form action="loc.php" method="POST">
   <input type="text" name="loc">
   <input size="50" type="submit" value="Update Location">
 </form>
 <?php
-  $location = $_POST['loc'];
-  fwrite($file, $location);
-  var_dump($file);
+  //$location = $_POST['loc'];
+  //fwrite($file, $location);
+
   fclose($file);
-  echo 'location probably updated (no error handling yet)';
+  
+  echo '<br>location probably updated (no error handling yet)';
 ?>
