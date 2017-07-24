@@ -29,13 +29,15 @@
         <br>Sure, lots of places claim to have the best Philly Cheesesteaks, but it's all lies.
         <br>Any trip up north Christopher would make sure he flew into Philadelphia International Airport - just to go to Pat's King of Steaks, where it all started.
         <br>Then it happened... Christopher figured out the recipe. Sure, he could be greedy and keep it all to himself but he's not that kind of guy.
-        <br>He instead decided to educate your tastebuds.
+        <br>Instead, he decided to educate your tastebuds.
         </p>
       </div>
     </div>
 
+    <!--fetch the current location of the truck from loc.txt -->
     <?php
-      $location = "Nashville";
+      $locFile = fopen('loc.txt', 'r');
+      $location = fread($locFile, filesize('loc.txt'));
     ?>
     <div class="row" id="truckFinder">
       <div class="col-lg-6 col-xs-12">
@@ -48,7 +50,7 @@
         </iframe>
       </div>
       <div class="col-lg-6 col-xs-12">
-        <img src="/pics/cheesesteak-small.jpg">
+        <img src="/cheesesteak/pics/cheesesteak.jpg">
       </div>
     </div>
   </div>
